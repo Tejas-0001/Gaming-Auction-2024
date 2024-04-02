@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argo 2023</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="s.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="woho">
+        <div class="bg-video">
+            <video id="background-video" autoplay loop muted>
+                <source src="valorant-bgmi.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="layout">
+            <div class="team">
+                <h2>Teams</h2>
+                <div class="tm" id="t1" onclick="setState(1)">
+                    <img class="icon" src="gagan.jpeg" alt="" srcset="">
+                    <h3>ECO FRAGGERS</h3>
+                    <div id="tm1">3000</div>
+                </div>
+                <div class="tm" id="t2" onclick="setState(2)">
+                    <img class="icon" src="suyash.jpg" alt="" srcset="">
+                    <h3>KHILONA SNIPERS</h3>
+                    <div id="tm2">3000</div>
+                </div>
+                <div class="tm" id="t3" onclick="setState(3)">
+                    <img class="icon" src="bhalla.jpeg" alt="" srcset="">
+                    <h3>AAPASHAYAM KIRKIRII</h3>
+                    <div id="tm3">2700</div>
+                </div>
+                <div class="tm" id="t4" onclick="setState(4)">
+                    <img class="icon" src="pewpew.jpeg" alt="" srcset="">
+                    <h3>PEW PEW POTATOES</h3>
+                    <div id="tm4">2500</div>
+                </div>
+                <div class="tm" id="t5" onclick="setState(5)">
+                    <img class="icon" src="BKL.png" alt="" srcset="">
+                    <h3>BKL</h3>
+                    <div id="tm5">3000</div>
+                </div>
+                <div class="tm" id="t6" onclick="setState(6)">
+                    <img class="icon" style="background-color: white;" src="devesh.PNG" alt="" srcset="">
+                    <h3>COMLESS V DOBARA</h3>
+                    <div id="tm6">3000</div>
+                </div>
+                <div class="tm" id="t7" onclick="setState(7)">
+                    <img class="icon" src="rajat.jpeg" alt="" srcset="">
+                    <h3>CYPHER'S CREED</h3>
+                    <div id="tm7">3000</div>
+                </div>
+                <div class="tm" id="t8" onclick="setState(8)">
+                    <img class="icon" style="background-color: white;" src="nisargg.jpeg" alt="" srcset="">
+                    <h3>BODMASH LADKE</h3>
+                    <div id="tm8">3000</div>
+                </div>
+                <div class="tm" id="t9" onclick="setState(9)">
+                    <img class="icon" style="background-color: white;" src="5starmeow.png" alt="" srcset="">
+                    <h3>5 STAR MEOW</h3>
+                    <div id="tm9">3200</div>
+                </div>
+                <div class="tm" id="t10" onclick="setState(10)">
+                    <img class="icon" src="chig.jpeg" alt="" srcset="">
+                    <h3>OTAT MEIN</h3>
+                    <div id="tm10">2700</div>
+                </div>
+                <div class="tm" id="t11" onclick="setState(11)">
+                    <img class="icon" src="SAGECRY.jpg" alt="" srcset="">
+                    <h3>SINGLE FOR LIFE</h3>
+                    <div id="tm11">10000</div>
+                </div>
+            </div>
+            <div class="bid">
+                <div>
+                    <h1>Current Bid</h1>
+                    <div class="bidamt" id="counter-value">0</div>
+                    <div class="btn">
+                        <button type="button" class="button-49" id="incr-20-btn">20</button>
+                        <button type="button" class="button-49" id="incr-35-btn">35</button>
+                        <button type="button" class="button-49" id="incr-50-btn">50</button>
+                        <button type="button" class="button-49" id="sold">Sold!!!</button>
+                        <button type="reset" class="button-49" id="reset">reset</button>
+                        <button type="button" class="button-49" id="next">Next</button>
+                    </div>
+                </div>
+                <div class="player" id="player">
+                    <img src="sexy.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+    
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="bg-video" id="temp">
+                    <video id="background-video1" autoplay loop muted>
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <div id="name1">Loading...</div>
+                <div id="name2">Name</div>
+                <div id="rank">Unranked</div>
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
